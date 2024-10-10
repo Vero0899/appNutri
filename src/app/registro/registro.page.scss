@@ -1,0 +1,60 @@
+/* Cambiar color de fondo de la página */
+ion-content {
+  --background: #000000 !important; 
+ line-height: 0.8; // Esto aumenta el espacio entre líneas
+}
+
+/* Cambiar color de fondo del header */
+ion-header {
+  --background: #4e60b9 !important; 
+}
+
+/* Cambiar color del texto del título del header */
+ion-title {
+  color:  white; 
+}
+
+/* Cambiar color de los items del formulario */
+ion-item {
+  --background: #000000; 
+  --color: white; 
+}
+
+/* Cambiar color del label del formulario */
+ion-label {
+  color: white; 
+}
+
+/* Cambiar color del input del formulario */
+ion-input {
+  --color: white;
+  --placeholder-color: white;
+}
+
+/* Cambiar color del selector de fecha */
+ion-datetime {
+  --background: #000000; 
+  --color: #eb32c3 ; 
+}
+
+/* Cambiar color del botón de registro */
+ion-button {
+  --background: rgb(223, 42, 42);
+  --color: white;
+}
+/* Cambiar color del checkbox */
+ion-checkbox {
+  --color: #4CAF50 !important; 
+}
+
+/* Estilo para el asterisco que indica campo obligatorio */
+.required {
+  color: red;
+  font-weight: bold;
+}
+.header-logo {
+  height: 40px; 
+  width: auto;
+  cursor: pointer;  
+  margin-right: 10px; 
+}

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Iniciar sesión</ion-title>
+    <ion-buttons slot="start">
+      <img src="assets/img/mob3.jpg" alt="Logotipo" class="header-logo" (click)="goToHome()">
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Componente de inicio de sesión -->
+  <app-login></app-login>
+
+  <!-- Enlace para recuperar contraseña -->
+  <div class="recover-password">
+    <a [routerLink]="['/reset']">¿Olvidaste tu contraseña?</a>
+  </div>
+</ion-content>
+
+

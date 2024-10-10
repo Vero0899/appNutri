@@ -1,0 +1,28 @@
+.header-logo {
+  height: 40px;
+  width: auto;
+  margin-left: 10px;
+  display: block;
+  cursor: pointer; /* Indica que es clickeable */
+}
+
+ion-header {
+  --background: #c01fc0 !important; 
+}
+
+.recover-password {
+  text-align: center; 
+  margin-top: 20px; 
+
+  a {
+    color: #f22b2b; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem; 
+    transition: color 0.3s ease; 
+  }
+
+  a:hover {
+    color: #fa4f24; 
+  }
+}

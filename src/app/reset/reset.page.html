@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperar Contraseña</ion-title>
+    <ion-buttons slot="end">
+      <a routerLink="/home">
+        <img src="assets/img/mob3.jpg" alt="Logo" style="height: 40px;">
+      </a>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="resetForm" (ngSubmit)="recuperarPassword()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Confirmar Email</ion-label>
+      <ion-input formControlName="confirmEmail" type="email"></ion-input>
+    </ion-item>
+    
+    <!-- Mensaje de error si los emails no coinciden -->
+    <div *ngIf="resetForm.errors?.['emailMismatch']" class="error-message">
+      Los correos electrónicos no coinciden.
+    </div>
+    
+    <ion-button expand="full" type="submit" [disabled]="resetForm.invalid">
+      Recuperar Contraseña
+    </ion-button>
+  </form>
+</ion-content>
+
+

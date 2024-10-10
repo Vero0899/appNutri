@@ -1,0 +1,47 @@
+// Estilos generales del encabezado
+ion-header {
+    --background: #f0f0f0; 
+  }
+  
+  // Estilos generales del contenido principal
+  ion-content {
+    --background: #f2aced; 
+    padding: 20px; 
+  }
+  
+  // Estilos para el formulario
+  form {
+    margin: 20px;
+    background-color: #f6c3e9; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(238, 78, 78, 0.1);
+  }
+  
+  // Estilo para los ítems del formulario
+  ion-item {
+    margin-bottom: 15px; // Espaciado entre campos
+  }
+  
+  // Estilo para las etiquetas dentro de ion-item
+  ion-label {
+    color: #333; 
+  }
+  
+  // Estilo para los campos de entrada
+  ion-input {
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+  }
+  
+  // Estilo para el mensaje de error
+  .error-message {
+    color: red; 
+    margin-top: 10px; 
+  }
+  
+  ion-button {
+    --color: #f8f7fb; 
+    --background: #f40de8;
+    font-size: 10px; 
+  } 
